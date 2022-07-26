@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>
+        sem-3
+        </title>
+    </head>
+    <script type="text/javascript">
+
+         function redtheme()
+          {
+            document.bgColor="red";
+          }
+
+         function add()
+         {
+            const a=parseInt(txta.value);
+            const b=parseInt(txtb.value);
+
+            txtans.value=a+b;
+            alert(txtans.value);
+         }
+         
+         function sub()
+         {
+            const a=parseInt(txta.value);
+            const b=parseInt(txtb.value);
+
+            txtans.value=a-b;
+            alert(txtans.value);
+         }
+         
+         function mul()
+         {
+            const a=parseInt(txta.value);
+            const b=parseInt(txtb.value);
+
+            txtans.value=a*b;
+            alert(txtans.value);
+         }
+         function div()
+         {
+            const a=parseInt(txta.value);
+            const b=parseInt(txtb.value);
+
+            txtans.value=a/b;
+            alert(txtans.value);
+         }
+    </script>
+    <body>
+        enter value of a: <input type="text" value="0" width="200px" id="txta" /><br>
+        enter value of b: <input type="text" value="0" width="200px" id="txtb" /><br>
+       ans:  <input type="text" value="0" width="200px" id="txtans" style="color: rgba(4, 4, 70, 0.225);" >
+
+        <input type="button" id="btadd" onclick="add()" value="+" style="background-color:red ;"/>
+        <input type="button" onclick="sub()" value="-" style="background-color:rgb(8, 8, 56) ;" />
+        <input type="button" onclick="mul()" value="*" style="background-color:rgb(10, 71, 18) ;" />
+        <input type="button" onclick="div()" value="/" style="background-color:rgb(90, 13, 74) ;" />
+    </body>
+</html>
